@@ -1,0 +1,63 @@
+.button {
+    --color: var(--accent-color);
+    position: relative;
+    color: var(--btn-text-color);
+    border-radius: 8px;
+    border: 2px solid var(--color);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--color);
+    transition: background-color var(--transition-duration), color var(--transition-duration), border-color var(--transition-duration), box-shadow var(--transition-duration);
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: color-mix(in srgb, var(--color) 80%, transparent);
+    border-color: color-mix(in srgb, var(--color) 100%, transparent);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--color) 40%, transparent);
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button:disabled:hover {
+    pointer-events: none;
+    background-color: var(--color);
+    border-color: var(--color);
+    box-shadow: none;
+}
+
+.button.outline {
+    background-color: transparent;
+    color: var(--color);
+}
+
+.button.outline:hover {
+    background-color: var(--color);
+    color: var(--btn-text-color);
+}
+
+.button.link {
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    transition: color var(--transition-duration), text-decoration var(--transition-duration);
+}
+
+.button.link:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.button.red {
+    --color: var(--red-color);
+}
+
+.button.gray {
+    --color: var(--dark-gray-color);
+}

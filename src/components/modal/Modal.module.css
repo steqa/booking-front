@@ -1,0 +1,30 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.body {
+    position: relative;
+    background-color: var(--modal-color);
+    border-radius: 8px;
+    padding: 16px;
+    min-width: 25%;
+}
+
+.noInteraction {
+    pointer-events: none;
+    user-select: none;
+}
+
+.noInteraction .modal {
+    pointer-events: all;
+    user-select: text;
+}

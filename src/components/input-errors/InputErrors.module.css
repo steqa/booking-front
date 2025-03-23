@@ -1,0 +1,12 @@
+.error {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.error span {
+    color: var(--red-color);
+}
