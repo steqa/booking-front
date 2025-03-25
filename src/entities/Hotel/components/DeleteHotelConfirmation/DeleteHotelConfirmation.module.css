@@ -1,0 +1,9 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content {
+    margin: 24px 0;
+}
